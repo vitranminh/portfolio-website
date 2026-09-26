@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tran Minh Vi | Business Portfolio</title>
+<meta name="description" content="Tran Minh Vi — Business Administration portfolio focused on sales, commercial excellence, leadership, research and execution.">
+<style>
+:root{
+  --ink:#11253c;
+  --ink-2:#173b62;
+  --paper:#fbfaf7;
+  --white:#ffffff;
+  --mist:#eef4f7;
+  --line:#dce5ea;
+  --muted:#69798a;
+  --blue:#3f8fc2;
+  --blue-soft:#dff1fb;
+  --gold:#d2a35d;
+  --coral:#ee7d68;
+  --navy:#123759;
+  --radius:28px;
+  --max:1200px;
+  --shadow:0 24px 70px rgba(18,55,89,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 85% 8%, rgba(63,143,194,.11), transparent 24%),
+    radial-gradient(circle at 8% 24%, rgba(238,125,104,.07), transparent 18%),
+    var(--paper);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.55;
+  overflow-x:hidden;
+}
+a{color:inherit}
+.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,250,247,.86);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(220,229,234,.8)
+}
+.nav-inner{
+  min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px
+}
+.brand{font-weight:900;letter-spacing:-.02em;text-decoration:none;font-size:1.05rem}
+.brand small{font-weight:650;color:var(--muted);margin-left:8px}
+.nav-links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.nav-links a{font-size:.91rem;color:var(--muted);text-decoration:none;font-weight:700}
+.nav-links a:hover{color:var(--ink)}
+.pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;border:1px solid var(--line);border-radius:999px;
+  padding:10px 15px;font-weight:800;background:#fff;transition:.2s ease
+}
+.pill:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(18,55,89,.08)}
+.pill.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hero{padding:56px 0 26px}
+.hero-shell{
+  min-height:650px;
+  position:relative;
+  display:grid;
+  grid-template-columns:1.18fr .82fr;
+  gap:20px;
+}
+.hero-copy,.hero-dashboard{
+  position:relative;overflow:hidden;
+  border:1px solid var(--line);border-radius:34px;background:rgba(255,255,255,.88);
+  box-shadow:var(--shadow)
+}
+.hero-copy{
+  padding:50px 48px;display:flex;flex-direction:column;justify-content:space-between
+}
+.hero-copy:before{
+  content:"VI";position:absolute;right:-20px;bottom:-75px;
+  font-weight:950;font-size:16rem;line-height:1;color:rgba(18,55,89,.035);
+  letter-spacing:-.10em;pointer-events:none
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;width:max-content;
+  font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-2)
+}
+.kicker:before{content:"";width:34px;height:2px;background:var(--coral);display:inline-block}
+h1{
+  max-width:760px;margin:18px 0 22px;font-size:clamp(3.4rem,7.6vw,7.2rem);
+  letter-spacing:-.07em;line-height:.88
+}
+.hero-intro{max-width:720px;font-size:1.16rem;color:#4f6172;margin:0}
+.hero-intro strong{color:var(--ink)}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:48px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.signature-line{
+  max-width:240px;color:var(--muted);font-size:.9rem;text-align:right
+}
+.signature-line strong{display:block;color:var(--ink);font-size:1rem}
+.hero-dashboard{
+  padding:22px;display:grid;grid-template-rows:auto 1fr auto;gap:16px;
+  background:
+    linear-gradient(155deg,rgba(223,241,251,.72),rgba(255,255,255,.92) 47%,rgba(246,239,225,.65))
+}
+.dashboard-top{display:flex;justify-content:space-between;align-items:center}
+.live-dot{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.82rem;font-weight:800}
+.live-dot:before{
+  content:"";width:9px;height:9px;border-radius:50%;background:#55b884;
+  box-shadow:0 0 0 5px rgba(85,184,132,.12)
+}
+.monogram{
+  display:grid;place-items:center;min-height:285px;border-radius:26px;
+  background:
+    radial-gradient(circle at 70% 22%,rgba(255,255,255,.95),transparent 26%),
+    linear-gradient(135deg,#163d64,#347ead 56%,#83bdda);
+  position:relative;overflow:hidden
+}
+.monogram:before,.monogram:after{
+  content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.28)
+}
+.monogram:before{width:270px;height:270px;right:-80px;top:-95px}
+.monogram:after{width:220px;height:220px;left:-80px;bottom:-95px}
+.monogram span{
+  font-size:8rem;line-height:1;font-weight:950;letter-spacing:-.12em;color:#fff;
+  text-shadow:0 18px 40px rgba(0,0,0,.10);transform:translateX(-6px)
+}
+.dashboard-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dash-card{
+  min-height:112px;padding:17px;border:1px solid rgba(18,55,89,.10);
+  border-radius:20px;background:rgba(255,255,255,.82)
+}
+.dash-card strong{font-size:1.8rem;line-height:1;color:var(--ink);display:block;margin-bottom:8px}
+.dash-card span{font-size:.85rem;color:var(--muted)}
+.marquee-wrap{padding:18px 0 32px;overflow:hidden}
+.marquee{
+  display:flex;gap:12px;width:max-content;animation:marquee 28s linear infinite
+}
+.marquee span{
+  border:1px solid var(--line);border-radius:999px;background:#fff;
+  padding:10px 16px;font-size:.86rem;font-weight:850;color:var(--ink-2)
+}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.section{padding:44px 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:24px}
+.section-head h2{font-size:clamp(2.2rem,4vw,4rem);line-height:.95;letter-spacing:-.055em;margin:0}
+.section-head p{max-width:570px;margin:0;color:var(--muted)}
+.label{
+  display:block;margin-bottom:10px;font-size:.75rem;font-weight:900;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--blue)
+}
+.bento{
+  display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:auto auto;gap:16px
+}
+.bento-card{
+  min-height:220px;padding:28px;border:1px solid var(--line);border-radius:26px;background:#fff;
+  box-shadow:0 14px 40px rgba(18,55,89,.055);position:relative;overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease
+}
+.bento-card:hover{transform:translateY(-4px);box-shadow:0 24px 58px rgba(18,55,89,.10)}
+.bento-card h3{font-size:1.25rem;margin:0 0 8px;letter-spacing:-.02em}
+.bento-card p{margin:0;color:var(--muted)}
+.bento-card.big{grid-row:span 2;min-height:456px;background:var(--navy);color:#fff}
+.bento-card.big p{color:#d9e5ee}
+.big-number{
+  position:absolute;right:22px;bottom:8px;font-size:10rem;font-weight:950;line-height:1;
+  color:rgba(255,255,255,.08);letter-spacing:-.08em
+}
+.metric{font-size:3.6rem;font-weight:950;letter-spacing:-.06em;color:var(--ink);line-height:1}
+.big .metric{color:#fff}
+.metric-note{font-size:.9rem;color:var(--muted);margin-top:8px}
+.big .metric-note{color:#d9e5ee}
+.ribbon{
+  margin-top:30px;padding:16px 20px;border-radius:20px;background:#edf5fa;
+  border:1px solid #dbe8f0;font-weight:750;color:var(--ink-2)
+}
+.work-showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.work-card{
+  background:#fff;border:1px solid var(--line);border-radius:30px;overflow:hidden;
+  box-shadow:0 18px 50px rgba(18,55,89,.07);transition:.25s ease
+}
+.work-card:hover{transform:translateY(-5px);box-shadow:0 28px 70px rgba(18,55,89,.12)}
+.work-visual{height:270px;position:relative;display:grid;place-items:center;overflow:hidden}
+.work-visual.startup{background:linear-gradient(135deg,#dff1fb,#f7ead8)}
+.work-visual.leadership{background:linear-gradient(135deg,#eaf0ff,#e6f7f0)}
+.orbit{
+  width:180px;height:180px;border:2px solid rgba(18,55,89,.16);border-radius:50%;
+  position:relative;display:grid;place-items:center
+}
+.orbit:before,.orbit:after{
+  content:"";position:absolute;border-radius:50%;background:#fff;border:1px solid rgba(18,55,89,.12);
+  box-shadow:0 10px 28px rgba(18,55,89,.08)
+}
+.orbit:before{width:58px;height:58px;right:-12px;top:20px}
+.orbit:after{width:42px;height:42px;left:6px;bottom:12px}
+.orbit strong{font-size:4rem;color:var(--ink);letter-spacing:-.06em}
+.node-map{position:relative;width:230px;height:170px}
+.node{
+  position:absolute;width:72px;height:72px;border-radius:22px;background:#fff;
+  display:grid;place-items:center;font-weight:900;color:var(--ink);
+  border:1px solid rgba(18,55,89,.12);box-shadow:0 14px 34px rgba(18,55,89,.10)
+}
+.node:nth-child(1){left:0;top:46px}
+.node:nth-child(2){right:0;top:12px}
+.node:nth-child(3){right:24px;bottom:0}
+.node:nth-child(4){left:82px;top:48px;background:var(--ink);color:#fff}
+.node-map svg{position:absolute;inset:0;width:100%;height:100%}
+.work-body{padding:28px}
+.work-index{font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.work-body h3{font-size:1.7rem;letter-spacing:-.04em;margin:9px 0 10px}
+.work-body p{margin:0;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tags span{font-size:.78rem;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:8px 11px;background:#fafcfd}
+.dark-section{margin:42px 0;background:var(--ink);color:#fff;border-radius:38px;padding:46px}
+.dark-section .section-head p{color:#c8d4df}
+.dark-section .label{color:#88c8ee}
+.journey{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative
+}
+.journey:before{
+  content:"";position:absolute;top:34px;left:6%;right:6%;height:2px;background:rgba(255,255,255,.16)
+}
+.step{position:relative;padding-top:72px}
+.step:before{
+  content:attr(data-step);position:absolute;top:0;left:0;width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;background:#fff;color:var(--ink);font-weight:950;font-size:1.1rem;
+  box-shadow:0 12px 30px rgba(0,0,0,.16)
+}
+.step h3{font-size:1rem;margin:0 0 7px}
+.step small{display:block;color:#8fc8e8;font-weight:800;margin-bottom:8px}
+.step p{font-size:.88rem;color:#cbd7e1;margin:0}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+.profile-card,.experience-list{
+  background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 15px 42px rgba(18,55,89,.055)
+}
+.profile-card{padding:30px;position:sticky;top:100px;height:max-content}
+.profile-card h3{font-size:1.45rem;margin:0 0 10px}
+.profile-card p{color:var(--muted);margin:0}
+.principles{display:grid;gap:12px;margin-top:22px}
+.principle{padding:15px 16px;border-radius:17px;background:var(--mist)}
+.principle strong{display:block;font-size:.92rem;margin-bottom:3px}
+.principle span{font-size:.84rem;color:var(--muted)}
+.experience-list{padding:12px}
+.exp{
+  padding:24px;border-radius:20px;display:grid;grid-template-columns:1fr auto;gap:12px;
+  transition:.2s ease
+}
+.exp:hover{background:#f6f9fb}
+.exp + .exp{border-top:1px solid var(--line)}
+.exp h3{margin:0;font-size:1.08rem}
+.exp .role{font-weight:800;color:var(--ink-2);margin-top:4px}
+.exp p{grid-column:1 / -1;margin:7px 0 0;color:var(--muted)}
+.exp time{font-size:.82rem;color:var(--muted);white-space:nowrap}
+.skills-panel{
+  padding:30px;border-radius:30px;background:
+    linear-gradient(135deg,#ffffff,#f0f6fa);border:1px solid var(--line)
+}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:.84rem;font-weight:800}
+.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.edu{
+  background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;position:relative
+}
+.edu:before{content:"";display:block;width:38px;height:4px;border-radius:99px;background:var(--gold);margin-bottom:18px}
+.edu h3{margin:0 0 6px}
+.edu .meta{font-size:.84rem;color:var(--muted);margin-bottom:14px}
+.edu strong{display:block;margin-bottom:4px}
+.award{margin-top:14px;font-size:.82rem;font-weight:850;color:#8a632f;background:#fbf3e7;border-radius:999px;padding:8px 11px;display:inline-block}
+.foundation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.foundation{
+  padding:20px;border-radius:22px;background:#fff;border:1px solid var(--line)
+}
+.foundation strong{display:block;font-size:1.35rem;color:var(--ink);margin-bottom:5px}
+.foundation span{font-size:.86rem;color:var(--muted)}
+.contact{
+  margin-top:22px;padding:38px;border-radius:34px;background:
+    radial-gradient(circle at 80% 20%,rgba(63,143,194,.20),transparent 30%),
+    var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:24px
+}
+.contact h2{font-size:clamp(2.3rem,4vw,4.2rem);letter-spacing:-.06em;line-height:.96;margin:0}
+.contact p{color:#cbd8e3;max-width:560px;margin:10px 0 0}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+.contact .pill{background:#fff;border-color:#fff;color:var(--ink)}
+.contact .pill.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.34)}
+footer{padding:34px 0 48px;color:var(--muted);font-size:.87rem;text-align:center}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+.spotlight{position:relative}
+.spotlight:after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(63,143,194,.10),transparent 38%);
+  opacity:0;transition:opacity .2s ease
+}
+.spotlight:hover:after{opacity:1}
+@media (max-width:980px){
+  .hero-shell,.split,.work-showcase{grid-template-columns:1fr}
+  .hero-dashboard{min-height:520px}
+  .bento{grid-template-columns:1fr 1fr}
+  .bento-card.big{grid-row:auto;grid-column:span 2;min-height:320px}
+  .journey{grid-template-columns:1fr}
+  .journey:before{display:none}
+  .step{padding:0 0 0 84px;min-height:72px}
+  .step:before{top:0}
+  .education-grid{grid-template-columns:1fr}
+  .foundation-grid{grid-template-columns:1fr 1fr}
+  .profile-card{position:relative;top:0}
+}
+@media (max-width:720px){
+  .wrap{width:min(var(--max),calc(100% - 24px))}
+  .nav-links{display:none}
+  .hero{padding-top:28px}
+  .hero-shell{min-height:0}
+  .hero-copy{padding:30px 24px}
+  h1{font-size:clamp(3rem,16vw,5rem)}
+  .hero-bottom{flex-direction:column;align-items:flex-start}
+  .signature-line{text-align:left}
+  .dashboard-grid{grid-template-columns:1fr 1fr}
+  .bento{grid-template-columns:1fr}
+  .bento-card.big{grid-column:auto}
+  .foundation-grid{grid-template-columns:1fr}
+  .dark-section{padding:28px 22px;border-radius:28px}
+  .contact{padding:28px 22px;flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">TRAN MINH VI <small>Portfolio</small></a>
+    <div class="nav-links">
+      <a href="#proof">Proof</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="pill" href="Tran_Minh_Vi_CV.pdf" target="_blank">View CV ↗</a>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-shell">
+      <div class="hero-copy spotlight">
+        <div>
+          <div class="kicker">Business Administration · Commercial Direction</div>
+          <h1>Business-minded.<br>People-focused.<br>Built to execute.</h1>
+          <p class="hero-intro">
+            I’m <strong>Tran Minh Vi</strong>, a Business Administration student focused on
+            <strong>sales, commercial excellence, market development, research, and leadership</strong>.
+            I turn information and ideas into organized, practical work.
+          </p>
+        </div>
+        <div class="hero-bottom">
+          <div class="hero-actions">
+            <a class="pill dark" href="#work">Explore my work</a>
+            <a class="pill" href="mailto:tranminhvi1201@gmail.com">Email me</a>
+            <a class="pill" href="https://linkedin.com/in/viminhtran" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+          <div class="signature-line">
+            <strong>Ho Chi Minh City, Vietnam</strong>
+            Open to internships, projects, and professional opportunities.
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-dashboard spotlight">
+        <div class="dashboard-top">
+          <strong>Snapshot</strong>
+          <span class="live-dot">Current profile</span>
+        </div>
+        <div class="monogram"><span>VI</span></div>
+        <div class="dashboard-grid">
+          <div class="dash-card"><strong>4.0</strong><span>Current GPA at Keiser University</span></div>
+          <div class="dash-card"><strong>1st</strong><span>KUV Startup Challenge</span></div>
+          <div class="dash-card"><strong>9–10</strong><span>Career events per semester supported</span></div>
+          <div class="dash-card"><strong>15M</strong><span>VND raised in a community fundraiser</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <span>Sales Execution</span><span>Market Research</span><span>Leadership</span><span>Commercial Excellence</span><span>Event Execution</span><span>Business Communication</span><span>AI-Assisted Research</span><span>Cross-Cultural Communication</span>
+      <span>Sales Execution</span><span>Market Research</span><span>Leadership</span><span>Commercial Excellence</span><span>Event Execution</span><span>Business Communication</span><span>AI-Assisted Research</span><span>Cross-Cultural Communication</span>
+    </div>
+  </div>
+
+  <section class="section reveal" id="proof">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Proof, not adjectives</span>
+          <h2>A few numbers tell the story.</h2>
+        </div>
+        <p>Academic consistency, leadership responsibility, and practical execution across student and community work.</p>
+      </div>
+
+      <div class="bento">
+        <article class="bento-card big spotlight">
+          <span class="label">Academic signal</span>
+          <div class="metric">4.0 / 4.0</div>
+          <p class="metric-note">Maintained across Broward College and Keiser University stages reflected in my current profile.</p>
+          <div class="ribbon">Scholarship recognition across Broward and Keiser academic stages.</div>
+          <div class="big-number">4.0</div>
+        </article>
+
+        <article class="bento-card spotlight">
+          <span class="label">Execution</span>
+          <div class="metric">3×+</div>
+          <p>Campus career and professional-development activity grew from about 3 to 9–10 events per semester while I supported design and logistics.</p>
+        </article>
+
+        <article class="bento-card spotlight">
+          <span class="label">Leadership</span>
+          <div class="metric">1st</div>
+          <p>Place in the KUV Startup Challenge.</p>
+        </article>
+
+        <article class="bento-card spotlight">
+          <span class="label">Community impact</span>
+          <div class="metric">15M VND</div>
+          <p>Raised with a 15-member team during the “Trung Thu Cho Em” fundraiser.</p>
+        </article>
+
+        <article class="bento-card spotlight">
+          <span class="label">Earlier foundation</span>
+          <div class="metric">Top 3</div>
+          <p>Graduated among the top three in class with an 8.8/10 GPA at Nam Sai Gon High School.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Selected work</span>
+          <h2>How I show up.</h2>
+        </div>
+        <p>Two examples that reflect my strongest recurring themes: shaping ideas clearly and coordinating people toward execution.</p>
+      </div>
+
+      <div class="work-showcase">
+        <article class="work-card spotlight">
+          <div class="work-visual startup">
+            <div class="orbit"><strong>1st</strong></div>
+          </div>
+          <div class="work-body">
+            <div class="work-index">01 · Competition</div>
+            <h3>KUV Startup Challenge</h3>
+            <p>Contributed to idea development, structure, and presentation, helping turn a concept into a clear, competition-ready pitch that earned first place.</p>
+            <div class="tags"><span>Business Innovation</span><span>Pitching</span><span>Presentation</span></div>
+          </div>
+        </article>
+
+        <article class="work-card spotlight">
+          <div class="work-visual leadership">
+            <div class="node-map">
+              <svg viewBox="0 0 230 170" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M43 82 L111 82 L189 45 M111 82 L173 136" stroke="#8EB6CA" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <div class="node">Team</div>
+              <div class="node">Campus</div>
+              <div class="node">Event</div>
+              <div class="node">VI</div>
+            </div>
+          </div>
+          <div class="work-body">
+            <div class="work-index">02 · Leadership</div>
+            <h3>Cross-Campus Event Coordination</h3>
+            <p>Led and supported planning, communication, records, and execution across participants and campus touchpoints through Phi Theta Kappa leadership.</p>
+            <div class="tags"><span>Leadership</span><span>Coordination</span><span>Execution</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="journey">
+    <div class="wrap dark-section">
+      <div class="section-head">
+        <div>
+          <span class="label">My journey</span>
+          <h2>Creative foundation → commercial direction.</h2>
+        </div>
+        <p>Each stage added something different: creativity, academic discipline, leadership, and a clearer business focus.</p>
+      </div>
+
+      <div class="journey">
+        <article class="step" data-step="01">
+          <small>Foundation</small><h3>Nam Sai Gon</h3>
+          <p>Design, content work, student activities, top-three academic performance.</p>
+        </article>
+        <article class="step" data-step="02">
+          <small>Business basics</small><h3>Broward College</h3>
+          <p>4.0 GPA, 35% scholarship, Open Arms design and fundraising.</p>
+        </article>
+        <article class="step" data-step="03">
+          <small>Leadership</small><h3>Keiser HCMC</h3>
+          <p>Academic excellence, student representation, events, and club leadership.</p>
+        </article>
+        <article class="step" data-step="04">
+          <small>Next stage</small><h3>Keiser Hue</h3>
+          <p>Projected scholarship path and continued Business Administration study.</p>
+        </article>
+        <article class="step" data-step="05">
+          <small>Direction</small><h3>Commercial focus</h3>
+          <p>Sales, customer relationships, market development, research, and execution.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Experience</span>
+          <h2>Leadership that required follow-through.</h2>
+        </div>
+        <p>I value roles where communication, organization, and execution are visible in the outcome.</p>
+      </div>
+
+      <div class="split">
+        <aside class="profile-card spotlight">
+          <span class="label">How I work</span>
+          <h3>Clear research. Clear execution. Clear communication.</h3>
+          <p>A simple working style I bring to projects, events, and collaborative environments.</p>
+          <div class="principles">
+            <div class="principle"><strong>Research with care</strong><span>Verify first. Use evidence carefully.</span></div>
+            <div class="principle"><strong>Execute clearly</strong><span>Turn ideas into tasks, timelines, and deliverables.</span></div>
+            <div class="principle"><strong>Communicate well</strong><span>Keep updates organized, direct, and actionable.</span></div>
+          </div>
+        </aside>
+
+        <div class="experience-list spotlight">
+          <article class="exp">
+            <div>
+              <h3>Phi Theta Kappa Honor Society International</h3>
+              <div class="role">President · Recording Secretary</div>
+            </div>
+            <time>2025 – Present</time>
+            <p>Led an international cross-campus event and supported chapter operations through planning, records management, member communication, and execution.</p>
+          </article>
+
+          <article class="exp">
+            <div>
+              <h3>Career & Professional Development Club</h3>
+              <div class="role">Event Organizer · Design & Logistics</div>
+            </div>
+            <time>2025 – Present</time>
+            <p>Designed event materials and coordinated logistics while the club expanded career-programming activity from approximately 3 to 9–10 events per semester.</p>
+          </article>
+
+          <article class="exp">
+            <div>
+              <h3>Open Arms · Broward College</h3>
+              <div class="role">Primary Designer · Fundraiser</div>
+            </div>
+            <time>2023</time>
+            <p>Worked with a 15-member team on “Trung Thu Cho Em,” helping raise VND 15 million and gain 100 new Facebook followers.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Education</span>
+          <h2>Academic consistency.</h2>
+        </div>
+        <p>Business studies across Broward College and Keiser University, supported by scholarship recognition.</p>
+      </div>
+
+      <div class="education-grid">
+        <article class="edu spotlight">
+          <h3>Keiser University</h3>
+          <div class="meta">Hue, Vietnam · 2026–2027 (Projected)</div>
+          <strong>Business Administration</strong>
+          <span>Current GPA: 4.0/4.0</span>
+          <div class="award">50% tuition scholarship projected + Presidential Scholarship</div>
+        </article>
+
+        <article class="edu spotlight">
+          <h3>Keiser University</h3>
+          <div class="meta">Ho Chi Minh City · Dec 2025</div>
+          <strong>Associate of Arts in Business Administration and Management</strong>
+          <span>GPA: 4.0/4.0</span>
+          <div class="award">35% tuition scholarship + Presidential Scholarship</div>
+        </article>
+
+        <article class="edu spotlight">
+          <h3>Broward College</h3>
+          <div class="meta">Ho Chi Minh City · May 2024</div>
+          <strong>Associate’s Degree in Business Administration</strong>
+          <span>GPA: 4.0/4.0</span>
+          <div class="award">35% tuition scholarship</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Earlier foundation</span>
+          <h2>Before business became the focus.</h2>
+        </div>
+        <p>Creative and student-facing experiences that helped shape my communication style and confidence.</p>
+      </div>
+      <div class="foundation-grid">
+        <div class="foundation"><strong>8.8/10</strong><span>High-school GPA, graduating in the top three of the class.</span></div>
+        <div class="foundation"><strong>2.3M VND</strong><span>Profit generated by the class at Nam Sai Gon High School’s Food Fair.</span></div>
+        <div class="foundation"><strong>VTV</strong><span>Featured in 2021 as a STEM class representative.</span></div>
+        <div class="foundation"><strong>3 years</strong><span>Student design and content-writing experience.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="label">Toolkit</span>
+          <h2>Skills I actually use.</h2>
+        </div>
+        <p>A mix of business communication, research, event execution, digital tools, and creative software.</p>
+      </div>
+      <div class="skills-panel spotlight">
+        <div class="chips">
+          <span class="chip">Customer Communication</span><span class="chip">Market & Competitor Analysis</span>
+          <span class="chip">Event Execution</span><span class="chip">Fundraising</span>
+          <span class="chip">Cross-Cultural Communication</span><span class="chip">Business Communication</span>
+          <span class="chip">Information Synthesis</span><span class="chip">AI-Assisted Workflow</span>
+          <span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">Grok</span>
+          <span class="chip">Microsoft Word</span><span class="chip">Microsoft Excel</span><span class="chip">Microsoft PowerPoint</span>
+          <span class="chip">Adobe Photoshop</span><span class="chip">Adobe Illustrator</span><span class="chip">Blender</span>
+          <span class="chip">Vietnamese</span><span class="chip">English</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="label">Let’s connect</span>
+        <h2>Interested in what I could bring to the team?</h2>
+        <p>Open to internships, projects, and professional opportunities in business, sales, commercial, and customer-facing environments.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="pill" href="mailto:tranminhvi1201@gmail.com">Email me</a>
+        <a class="pill ghost" href="https://linkedin.com/in/viminhtran" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="pill ghost" href="Tran_Minh_Vi_CV.pdf" target="_blank">CV ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Tran Minh Vi · Business Administration Portfolio · 2026</div></footer>
+
+<script>
+(function(){
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, {threshold:.12});
+  revealEls.forEach(el => io.observe(el));
+
+  document.querySelectorAll('.spotlight').forEach(card => {
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX-r.left)+'px');
+      card.style.setProperty('--my', (e.clientY-r.top)+'px');
+    });
+  });
+})();
+</script>
+</body>
+</html>
